@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@tish Fitness</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            /* background: url('/Project1/front.jpg'); */
+            color: white;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .left {
+            /* border: 2px solid grey; */
+            /* background-color: honeydew; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 105px;
+            height: 50px;
+            /* filter: invert(100%); */
+            border-radius: 80%;
+        }
+
+        .left div {
+            line-height: 9px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* --------------------------------------------------------------------------------------------- */
+        .mid {
+            /* border: 2px solid grey; */
+            display: block;
+            width: 36%;
+            /* height: 123px; */
+            margin: 30px auto;
+            border-radius: 9px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 2px 2px;
+            padding: 4px;
+        }
+
+        .navbar li a {
+            color: blanchedalmond;
+            text-decoration: none;
+            padding: 34px 4px;
+        }
+
+        .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+        /* ------------------------------------------------------------------------------------------------- */
+        .right {
+            /* border: 2px solid grey; */
+            /* background-color: honeydew; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            margin: 2px 4px;
+            padding: 2px 2px;
+
+        }
+        .search {
+            display: inline-block;
+
+
+        }
+
+        .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: rgb(204, 131, 131);
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 10px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background-color: rgb(238, 222, 222);
+    }
+        /* -------------------------------------------------------------------------------------- */
+        .container {
+            /* border: 2px solid greenyellow; */
+               text-align: center;
+            margin: 60px 20px;
+            padding: 100px;
+            width: 30%;
+            height: 200px;
+            border-radius: 28px;
+        }
+      
+        
+        .fromgroup input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 478px;
+        height: 30px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 2px auto;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+    .container h2 {
+        text-align: center;
+    }
+
+        .submit {
+            display: block;
+        width: 110px;
+        height: 40px;
+        margin: 20px auto;
+        text-align: center;
+        border-radius: 18px;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left portion(logo) -->
+        <div class="left">
+            <!-- <img src="/Project1/logo.PNG" aria-placeholder="logo"> -->
+            
+            <div class="logotext">@tish Fitness</div>
+        </div>
+        <!-- mid portion(navbar)----------------------------- -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right portion()---------------------------------- -->
+        <div class="right">
+            <div class="search">
+                <input type="search" name="search" placeholder="Search">
+            </div>
+                <button class="btn">Call us</button>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Join the best gym of Bolpur now</h2>
+        <form action="noaction.php">
+            <div class="fromgroup">
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="fromgroup">
+                <input type="text" name="name" placeholder="Enter your Age">
+            </div>
+            <div class="fromgroup">
+                <input type="text" name="name" placeholder="Enter your Gender">
+            </div>
+            <div class="fromgroup">
+                <input type="text" name="name" placeholder="Enter your Mobile No.">
+            </div>
+            <button class="submit">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
